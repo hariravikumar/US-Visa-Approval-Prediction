@@ -11,6 +11,18 @@ from us_visa.logger import logging
 
 
 def read_yaml_file(file_path: str) -> dict:
+    """
+    Reads a YAML file and returns its contents as a Python dictionary.
+
+    Args:
+        file_path (str): The path of the YAML file to read.
+
+    Returns:
+        dict: The contents of the YAML file as a Python dictionary.
+
+    Raises:
+        USvisaException: If an error occurs while reading the YAML file.
+    """
     try:
         with open(file_path, "rb") as yaml_file:
             return yaml.safe_load(yaml_file)
@@ -20,6 +32,18 @@ def read_yaml_file(file_path: str) -> dict:
 
 
 def write_yaml_file(file_path: str, content: object, replace: bool = False) -> None:
+    """
+    Writes the given content to a YAML file.
+
+    Args:
+        file_path (str): The path of the YAML file to write to.
+        content (object): The content to write to the YAML file.
+        replace (bool, optional): Whether to replace the file if it already exists.
+            Defaults to False.
+
+    Raises:
+        USvisaException: If an error occurs while writing to the file.
+    """
     try:
         if replace:
             if os.path.exists(file_path):
@@ -32,6 +56,20 @@ def write_yaml_file(file_path: str, content: object, replace: bool = False) -> N
 
 
 def load_object(file_path: str) -> object:
+
+    """
+    Load an object from a file.
+
+    Args:
+        file_path (str): The path of the file to load the object from.
+
+    Returns:
+        object: The object that was loaded from the file.
+
+    Raises:
+        USvisaException: If an error occurs while loading the object.
+    """
+
     logging.info("Entered the load_object method of utils")
 
     try:

@@ -33,3 +33,10 @@ conda activate visa
 ```bash
 pip install -r requirements.txt
 ```
+
+
+Create MaongoDB account
+MongoDB: https://account.mongodb.com/account/login
+
+
+Check the url for the orient  parameter  to convert to dictionary in dataset https://www.w3resource.com/pandas/dataframe/dataframe-to_dict.php
