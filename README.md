@@ -40,3 +40,37 @@ MongoDB: https://account.mongodb.com/account/login
 
 
 Check the url for the orient  parameter  to convert to dictionary in dataset https://www.w3resource.com/pandas/dataframe/dataframe-to_dict.php
+
+
+
+## Workflow
+
+1. constant
+2. config_entity
+3. artifact_entity
+4. conponent
+5. pipeline
+6. app.py / demo.py
+
+
+config_entity  input to your entity / flow
+artifact_entity return from your enity/flow
+
+### Export the  environment variable
+```bash
+
+
+export MONGODB_URL="mongodb+srv://<username>:<password>...."
+export MONGODB_URL="mongodb+srv://harikmongodb:harikmongodb@cluster0.czz75cq.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
+```
+
+
+- mongo_db_connection.py inside configuration folder : create mongodb database connection
+
+Create data_access folder --> usvisa_data.py:  This class help to export entire mongo db record and return as pandas dataframe
+
+#### Data Ingestion
+- export_data_into_feature_store
+- split_data_as_train_test
+
+- initiate_data_ingestion
