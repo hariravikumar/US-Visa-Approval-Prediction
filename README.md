@@ -73,4 +73,4 @@ export MONGODB_URL="mongodb+srv://<username>:<password>...."
 - export_data_into_feature_store
 - split_data_as_train_test
 
-- initiate_data_ingestion
+- initiate_data_ingestion.
