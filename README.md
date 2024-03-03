@@ -53,21 +53,21 @@ Check the url for the orient  parameter  to convert to dictionary in dataset htt
 6. app.py / demo.py
 
 
-config_entity  input to your entity / flow
-artifact_entity return from your enity/flow
+- config_entity  input to your entity / flow
+- artifact_entity return from your enity/flow
 
 ### Export the  environment variable
 ```bash
 
 
 export MONGODB_URL="mongodb+srv://<username>:<password>...."
-export MONGODB_URL="mongodb+srv://harikmongodb:harikmongodb@cluster0.czz75cq.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
+
 ```
 
 
 - mongo_db_connection.py inside configuration folder : create mongodb database connection
 
-Create data_access folder --> usvisa_data.py:  This class help to export entire mongo db record and return as pandas dataframe
+- Create data_access folder --> usvisa_data.py:  This class help to export entire mongo db record and return as pandas dataframe
 
 #### Data Ingestion
 - export_data_into_feature_store
