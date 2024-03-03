@@ -65,7 +65,7 @@ export MONGODB_URL="mongodb+srv://<username>:<password>...."
 ```
 
 
-- mongo_db_connection.py inside configuration folder : create mongodb database connection
+- mongo_db_connection.py  inside configuration folder : create mongodb database connections
 
 - Create data_access folder --> usvisa_data.py:  This class help to export entire mongo db record and return as pandas dataframe
 
